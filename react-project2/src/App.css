@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #eef7f6;
+  color: #263331;
+}
+
+/* App */
+
+.app {
+  min-height: 100vh;
+}
+
+/* Header */
+
+.header {
+  text-align: center;
+  padding: 45px 20px;
+  background-color: #263f3b;
+  color: white;
+}
+
+.header h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.header p {
+  font-size: 17px;
+}
+
+/* Main */
+
+main {
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+/* Heading */
+
+.heading-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.heading-section h2 {
+  font-size: 30px;
+}
+
+/* Button */
+
+.heading-section button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #527d75;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.heading-section button:hover {
+  background-color: #365e58;
+}
+
+/* Student List */
+
+.student-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+/* Student Card */
+
+.student-card {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  padding: 25px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.student-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Student Photo */
+
+.student-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #527d75;
+}
+
+/* Student Information */
+
+.student-info h3 {
+  font-size: 22px;
+  margin-bottom: 12px;
+  color: #263f3b;
+}
+
+.student-info p {
+  margin: 7px 0;
+  font-size: 15px;
+}
+
+.cgpa {
+  color: #527d75;
+  font-size: 17px !important;
+}
+
+/* Footer */
+
+.footer {
+  text-align: center;
+  padding: 25px;
+  margin-top: 30px;
+  background-color: #263f3b;
+  color: white;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+
+  .student-list {
+    grid-template-columns: 1fr;
+  }
+
+  .heading-section {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .heading-section h2 {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 500px) {
+
+  .header h1 {
+    font-size: 28px;
+  }
+
+  .student-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .student-photo {
+    width: 110px;
+    height: 110px;
+  }
+}
